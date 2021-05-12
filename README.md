@@ -9,8 +9,9 @@ Hi mn, rất vui khi được làm việc với mn nè
 2. Trước khi thêm code mới , đặc biệt là push code lên thì chạy lệnh: 
 -  git pull origin develop
 3. Các lệnh để push code lên
+- git add .
 - git commit -m "tổng quan nội dung phần code mn push"
-- git push
+- git push --set-upstream origin  + tên nhánh HOẶC git push (cho những lần sau push)
 3. Khi push code lên thì pull request cho 1 người nào đó review nhaaaaa.
 4. Hết rồi á, cám ơn mn đã dành thời gian đọc những điều trên nha !
 LƯU Ý:
