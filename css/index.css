@@ -12,13 +12,11 @@
   font-family: DaimlerCAC-Regular;
   src: url(../font/DaimlerCAC-Regular.ttf);
 }
-h2
-{
-  font-family: 'DaimlerCAC-Regular';
+h2 {
+  font-family: "DaimlerCAC-Regular";
 }
-p
-{
-  font-family: 'MBCorpoText';
+p {
+  font-family: "MBCorpoText";
 }
 /* WELCOME */
 .welcome {
@@ -34,7 +32,6 @@ p
   background-color: #0088c6;
   border: 1px solid #0088c6;
 }
-.welcome__channel li
-{
+.welcome__channel li {
   width: 320px;
 }
