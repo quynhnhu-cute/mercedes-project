@@ -7,7 +7,9 @@
     {.container, .container-lg, .container-md, .container-sm, .container-xl {
     max-width: 1440px;
 }}
-
+body{
+    font-family: MBCorpo Text,DaimlerCS-Regular,Helvetica,Arial,sans-serif;
+}
 header {
     background-color: black;
     color: white;
@@ -17,26 +19,70 @@ header {
     justify-content: space-between;
     width: 100%;
     margin: auto;
-    height: 100px;
+    height: 108px;
+    font-size: 15px;
 }
 .header_logo img{
     width: 70px;
     margin-right: 55px;
-    padding: 15px 0px;
+    padding: 17px 0px;
     margin-bottom: 50px;
 }
 
 .active_top{
     text-align: right;
+    margin-top: 5px;
+
 }
+.active_top a{
+    color: white;
+    text-decoration: none;
+}
+.active_top a:hover{
+    color: #00adef;
+}
+
+
+.active_top a:first-of-type{
+    padding: 0 190px 0px 0;
+    padding-right: 235px;
+}
+.active_top i{
+    font-size: 9px;
+    border: 2px solid white;
+    width: 15px;
+    height: 16px;
+    line-height: 12px;
+    text-align: center;
+}
+.active_top i:hover{
+    border: 2px solid #00adef;
+}
+.active_top p{
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: 4 00;
+    width: 225px;
+    margin-top: -12px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+
+
 .active_bottom{
     width: 100%;
+}
+.active_bottom ul a{
+    color: white;
+}
+.active_bottom ul a:hover{
+    color: #00adef; 
 }
 .active_bottom ul li{
     float: left;
     list-style: none;
-    padding-left: 35px;
-    padding-top: 35px;
+    margin-left: 40px;
+    margin-top: 36px;
 }
 .active_bottom i{
     padding-left: 35px;
@@ -45,5 +91,109 @@ header {
 .active_bottom i{
     width: 20px;
     color: white;
-    padding-top: 5px;
+    padding-top: 40px;
+    padding-right: 20px;
+}
+
+
+/* CAROUSEL */
+.carousel{
+    height: 650px;
+
+}
+.crs_content img{
+    height: 650px;
+    width: 100%;
+}
+.crs_content{
+    position: relative;
+}
+.slick-slider .slick-arrow {
+    font-size: 40px;
+    position: absolute;
+    top: 320px;
+    cursor: pointer;
+    color: white;
+    font-size: 40px;
+  }
+  .slick-slider .slick-arrow:hover{
+      color: #ddd;
+    -webkit-transition: color .25s;
+    transition: color .25s;
+  }
+  .slick-slider .slick-arrow.left {
+    left: 40px;
+    z-index: 1;
+    width: 35px;
+    border: none;
+  }
+  
+
+  .slick-slider .slick-arrow.right {
+    right: 40px;
+    width: 35px;
+    border: none;
+  }
+
+.crs_item{
+    position: absolute;
+    top: 70px;
+    left: 135px;
+}
+.crs_item{
+    width: 40%;
+    -webkit-transition: transform .5s ease-out,opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out,-webkit-transform .5s ease-out;
+    transition: opacity .5s ease-out,-webkit-transform .5s ease-out;
+    transition: transform .5s ease-out,opacity .5s ease-out;
+    transition: transform .5s ease-out,opacity .5s ease-out,-webkit-transform .5s ease-out;
+}
+.crs_item p{
+    width: 98%;
+}
+.crs_item a{
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    font-family: 'MBCorpo Title,DaimlerCAC-Regular,Helvetica,Arial,sans-serif';
+    width: 98%;
+    text-decoration: none;
+}
+.crs_item #crs_text{
+    color: #333;
+}
+.crs_item button{
+    background: #333;
+    border: 1px solid #333;
+    border-radius: 0;
+    color: #f0f0f0;
+    width: 115px;
+    height: 38px;
+}
+.crs_item button:hover{
+    background: #1f1f1f;
+    border: 1px solid #1f1f1f;
+    border-radius: 0;
+    color: #f0f0f0;
+}
+
+.search{
+    z-index: 1;
+    width: 100%;
+    height: 100px;
+    background-color: #333;
+    position: relative;
+}
+.search input{
+    position: absolute;
+    left: 7%;
+    top: 35px;
+    width: 85%;
+    height: 45px;
+    padding: 10px;
+}
+.search i{
+    position: absolute;
+    right: 140px;
+    top: 48%;
 }
