@@ -8,17 +8,16 @@
     <title>Mercedes</title>
 
     <!-- BOOTSTRAP -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
 
     <!-- font awsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
 
-    <!-- slick css -->
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-    <link rel="stylesheet" href="./css/slick.css">
 
     <link rel="stylesheet" href="./css/index.css">
 </head>
@@ -26,10 +25,10 @@
 <body>
 
     <!-- Cường -->
-    <header>
+    <header id="hide_header">
         <!-- Nguyên phần header  -->
 
-        <div class="container">
+        <div class="container" >
             <div class="header_content">
                 <div class="header_logo">
                     <img src="images/header_logo/kisspng-mercedes-benz-car-jerry-s-collision-center-logo-ve-content-management-system-cheeky-monkey-studios-lt-5b6ce6705022a8.6423509715338635363282.png"
@@ -84,53 +83,77 @@
     </header>
 
     <!-- Cường -->
-    <div class="carousel">
+    <div class="carousel_slide">
         <!-- Carousel và phần search  -->
-        <div class="crs_slide">
-            <div class="crs_content">
-                <img src="./images/banner/01-mercedes-benz-cls-2021-c257-stage-3400x1440.jpeg" alt="">
-                <div class="crs_item" href="">
-                    <p><a href="">The new CLS.</a></p>
-                    <button>Learn more</button>
-                </div>    
-            </div>
-            <div class="crs_content">
-                <img src="./images/banner/01-mercedes-benz-c-class-saloon-estate-2021-w206-s206-stage-3400x1440.webp" alt="">
-                <div class="crs_item" href="">
-                    <p><a href="">The new C-Class by Mercedes‑Benz. </a></p>
-                    <button>Learn more</button>
-                </div>    
-            </div>
-            <div class="crs_content">
-                <img src="./images/banner/01-mercedes-benz-chronograph-3400x1440.webp"alt="">
-                <div class="crs_item" href="">
-                   <p> <a href=""> A Mercedes-Benz - For your wrist.</a></p>
-                    <button>Learn more</button>
-                </div>    
-            </div>
-            <div class="crs_content">
-                <img src="./images/banner/mercedes-benz-eqs-v297-homepage-3400x1440-03-2021.webp" alt="">
-                <div class="crs_item" href="">
-                   <p><a href=""> The new EQS. This is for you, world. </a> </p>
-                    <button>Learn more</button>
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            
+            <div class="carousel-inner">
+              <div class="carousel-item active position-relative">
+                <img src="./images/banner/h1.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block position-absolute sticky-top sticky-right text-left">
+                    <a href="">
+                        <h1 class="animate__animated animate__fadeInDown "> The new CLS. </h1>
+                    </a>
+                    
+                  <button type="button" class="btn btn-dark rounded-0 animate__animated animate__fadeInDown animate__delay-1s ">Learn more</button>
                 </div>
-            </div>
-            <div class="crs_content">
-                <img src="./images/banner/01-mercedes-benz-concept-eqt-by-mercedes-eq-3400x1440.webp" alt="">
-                <div class="crs_item" href="">
-                    <p><a href=""> Concept EQT. </a></p>
-                    <button>Learn more</button>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/banner/h2.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block position-absolute sticky-top sticky-right text-left">
+                    <a href="">
+                        <h1 class="animate__animated animate__fadeInDown"> The new C-Class by Mercedes‑Benz. </h1>                       
+                    </a>
+                  <button type="button" class="btn btn-dark rounded-0 animate__animated animate__fadeInDown animate__delay-1s">Learn more</button>
                 </div>
-            </div>
-           
-            <div class="crs_content">               
-                <img src="./images/banner/01-mercedes-eq-eqb-2021-x243-3400x1440.webp" alt="">
-                <div class="crs_item" href="" >
-                <p> <a href="" id="crs_text"> The new EQB.</a></p>
-                    <button>Learn more</button>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/banner/h3.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block position-absolute sticky-top sticky-right text-left">
+                    <a href="">
+                        <h1 class="animate__animated animate__fadeInDown"> A Mercedes-Benz – For your wrist. </h1>
+                    </a>
+                  <button type="button" class="btn btn-dark rounded-0 animate__animated animate__fadeInDown animate__delay-1s ">Learn more</button>
                 </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/banner/h4.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block position-absolute sticky-top sticky-right text-left">
+                    <a href="">
+                        <h1 class="animate__animated animate__fadeInDown"> The new EQS. This is for you, world. </h1>
+                    </a>
+                  <button type="button" class="btn btn-dark rounded-0 animate__animated animate__fadeInDown animate__delay-1s">Learn more</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/banner/h5.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block position-absolute sticky-top sticky-right text-left">
+                    <a href="">
+                        <h1 class="animate__animated animate__fadeInDown"> Concept EQT. </h1>
+                    </a>
+                  <button type="button" class="btn btn-dark rounded-0 animate__animated animate__fadeInDown animate__delay-1s">Learn more</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/banner/h6.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block position-absolute sticky-top sticky-right text-left">
+                    <a href="">
+                        <h1 class="animate__animated animate__fadeInDown"> The new EQB. </h1>
+
+                    </a>
+                  <button type="button" class="btn btn-dark rounded-0 animate__animated animate__fadeInDown animate__delay-1s">Learn more</button>
+                </div>
+              </div>
             </div>
             
+            <a class="carousel-control-prev carousel_angle" href="#carouselExampleCaptions" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+             
+            </a>
+            <a class="carousel-control-next carousel_angle" href="#carouselExampleCaptions" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              
+            </a>
           </div>
           <div class="search" id="search">
                 <input type="text"  placeholder="I am looking for...">
@@ -162,26 +185,26 @@
 
     <!-- BOOTSTRAP JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-        crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.min.js"></script>
 
+    <!-- hide header -->
+    <script >
+        var lastScrollTop = 0;
 
-    <!-- slick js -->
+        hide_header = document.getElementById("hide");
 
-    <script src="./js/slick.min.js"></script>
-    <script>
-        $('.crs_slide').slick({
-        // autoplay: true,
-        autoplaySpeed: 6000,
-        slidesToShow: 1,
-        speed: 400,
-        cssEase: 'linear',
-    prevArrow: '<i class="fa fa-angle-left left"></i>',
-    nextArrow: '<i class="fa fa-angle-right right"></i>',
-
-});
+    window.addEventListener("scroll", function(){
+    var scrollTop = window.pageYOffset ||
+    document.documentElement.scrollTop;
+    if (scrollTop > lastScrollTop){
+        hide_header.style.top = "-10px"
+    } else {
+        hide_header.style.top = "0"
+    } 
+        lastScrollTop = scrollTop;
+})
     </script>
+
 </body>
 
 </html>
