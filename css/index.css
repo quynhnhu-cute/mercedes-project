@@ -25,10 +25,7 @@ header {
     position: fixed;
     z-index: 5;
     width: 100%;
-    animation-name: head;
-}
-@keyframes head{
-    
+
 }
 .header_content{
     display: flex;
