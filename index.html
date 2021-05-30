@@ -1,34 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- BOOTSTRAP 4.0 -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./font/MBCorpoText.ttf" />
-    <!-- FONT AWSOME -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-    />
-    <!-- MAIN CSS -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercedes</title>
-    <link rel="stylesheet" href="./css/index.css" />
-  </head>
-  <body>
-    <header>
-      <!-- Nguyên phần header  -->
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+
+    <!-- Cường -->
+    <header id="hide_header">
+        <!-- Nguyên phần header  -->
+
+        <div class="container" >
+            <div class="header_content">
+                <div class="header_logo">
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                      <img src="images/header_logo/kisspng-mercedes-benz-car-jerry-s-collision-center-logo-ve-content-management-system-cheeky-monkey-studios-lt-5b6ce6705022a8.6423509715338635363282.png"
+                        alt="mercedes">
+                    <span>Mercedes-Benz</span>
+                  </a>
+                </div>
+                <div class="header_active">
+                    <div class="active_top">
+                        <a href="">
+                            <i class="fa fa-info">
+                                <p>Provider/Privacy Statement</p>
+                        </i>
+                            
+                        </a>
+                        <a href="">
+                            <span>Deutsch<span>
+                        </a>
+                    </div>
+                    <div class="active_bottom">
+                        <ul>
+                            <a href="">
+                                <li>Company</li>
+                            </a>
+                            <a href="">
+                                <li>Vehicles</li>
+                            </a>
+                            <a href="">
+                                <li>Design</li>
+                            </a>
+                            <a href="">
+                                <li>Innovation</li>
+                            </a>
+                            <a href="">
+                                <li>Museum & History</li>
+                            </a>
+                            <a href="">
+                                <li>Sports</li>
+                            </a>
+                            <a href="">
+                                <li>Events</li>
+                            </a>
+                            <a href="">
+                                <li>Lifestyle</li>
+                            </a>
+                            <a href="#search"><i class="fa fa-search"></i></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </header>
-    <div class="carousel">
-      <!-- Carousel và phần search  -->
+
+    <!-- Cường -->
+    <div class="carousel_slide">
+        <!-- Carousel và phần search  -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            
+            <div class="carousel-inner">
+              <div class="carousel-item active position-relative">
+                <img src="./images/banner/h1.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block position-absolute sticky-top sticky-right text-left">
+                    <a href="">
+                        <h1 class="animate__animated animate__fadeInDown "> The new CLS. </h1>
+                    </a>
+                    
+                  <button type="button" class="btn btn-dark rounded-0 animate__animated animate__fadeInDown animate__delay-1s ">Learn more</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/banner/h2.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block position-absolute sticky-top sticky-right text-left">
+                    <a href="">
+                        <h1 class="animate__animated animate__fadeInDown"> The new C-Class by Mercedes‑Benz. </h1>                       
+                    </a>
+                  <button type="button" class="btn btn-dark rounded-0 animate__animated animate__fadeInDown animate__delay-1s">Learn more</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/banner/h3.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block position-absolute sticky-top sticky-right text-left">
+                    <a href="">
+                        <h1 class="animate__animated animate__fadeInDown"> A Mercedes-Benz – For your wrist. </h1>
+                    </a>
+                  <button type="button" class="btn btn-dark rounded-0 animate__animated animate__fadeInDown animate__delay-1s ">Learn more</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/banner/h4.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block position-absolute sticky-top sticky-right text-left">
+                    <a href="">
+                        <h1 class="animate__animated animate__fadeInDown"> The new EQS. This is for you, world. </h1>
+                    </a>
+                  <button type="button" class="btn btn-dark rounded-0 animate__animated animate__fadeInDown animate__delay-1s">Learn more</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/banner/h5.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block position-absolute sticky-top sticky-right text-left">
+                    <a href="">
+                        <h1 class="animate__animated animate__fadeInDown"> Concept EQT. </h1>
+                    </a>
+                  <button type="button" class="btn btn-dark rounded-0 animate__animated animate__fadeInDown animate__delay-1s">Learn more</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/banner/h6.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block position-absolute sticky-top sticky-right text-left">
+                    <a href="">
+                        <h1 class="animate__animated animate__fadeInDown"> The new EQB. </h1>
+
+                    </a>
+                  <button type="button" class="btn btn-dark rounded-0 animate__animated animate__fadeInDown animate__delay-1s">Learn more</button>
+                </div>
+              </div>
+            </div>
+            
+            <a class="carousel-control-prev carousel_angle" href="#carouselExampleCaptions" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+             
+            </a>
+            <a class="carousel-control-next carousel_angle" href="#carouselExampleCaptions" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              
+            </a>
+          </div>
+          <div class="search" id="search">
+                <input type="text"  placeholder="I am looking for...">
+                <i class="fa fa-search" id="search"></i>
+            </div>
     </div>
     <section class="welcome py-5 container-fluid">
       <div class="welcome__content w-75 ml-auto mr-auto row">
@@ -2022,6 +2154,41 @@
       <!-- More topic các kiểu đến stay informed -->
     </div>
     <footer>
+<<<<<<< HEAD
+        <!-- Từ stay informed đến hết  -->
+    </footer>
+
+
+    <!-- jquery -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
+    <!-- hide header -->
+    <script >
+        var lastScrollTop = 0;
+
+        hide_header = document.getElementById("hide");
+
+    window.addEventListener("scroll", function(){
+    var scrollTop = window.pageYOffset ||
+    document.documentElement.scrollTop;
+    if (scrollTop > lastScrollTop){
+        hide_header.style.top = "-10px"
+    } else {
+        hide_header.style.top = "0"
+    } 
+        lastScrollTop = scrollTop;
+})
+    </script>
+
+</body>
+
+</html>
+=======
       <!-- Từ stay informed đến hết  -->
     </footer>
     <!-- MAIN CSS -->
@@ -2044,3 +2211,4 @@
     ></script>
   </body>
 </html>
+>>>>>>> 8528fd884d304db9fd110943500daf230a879209
