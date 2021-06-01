@@ -4,6 +4,10 @@
 
 }
 
+.clear{
+  clear: both;
+}
+
 body{
     background-color: black;
     height: 1000px;
@@ -188,7 +192,7 @@ body{
 .footer__bottom__menu__left{
   display: flex;
   border: 1px solid wheat;
-  width: 15\%;
+  width: 15%;
   /* z-index: 30; */
   /* margin-right: 330px; */
 }
@@ -227,6 +231,7 @@ body{
 .footer__bottom__menu__right ul li{
   display: inline;
   margin-right: 10px;
+  white-space: nowrap;
 }
 
 .footer__bottom__menu__right ul li a{
@@ -253,4 +258,63 @@ body{
   width: 20px;
   /* margin-left: 5px; */
   margin-right: 10px;
+}
+
+.footer__menu__left{
+  float: right;
+  width: 40%;
+  text-align: left;
+  border: 1px solid white;
+  /* white-space: nowrap; */
+} 
+
+.footer__bottom__menu__right ul{
+  border: 1px solid yellow;
+}
+@media screen and (max-width:1156px){
+  .footer__menu__left{
+    width: 100%;
+    text-align: right;
+    border: 1px solid white;
+  } 
+}
+
+@media screen and (max-width:1487px) and (min-width:1156px){
+  .footer__menu__left{
+    width: 55%;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .footer__bottom__menu{
+    display: block;
+  }
+  .footer__menu__left{
+    width: 100%;
+    text-align: left;
+    /* float: none; */
+  }
+  .footer__menu__right{
+    width: 100%;
+    text-align: left;
+    /* float: none; */
+  }
+  .footer__bottom__menu__right ul{
+    padding: 0;
+  }
+  .back-to-top{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .footer__bottom__menu__left{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__bottom__menu__right{
+    width: 100%;
+  }
 }
