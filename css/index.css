@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-
 }
 
 .clear{
@@ -10,7 +9,6 @@
 
 body{
     background-color: black;
-    height: 1000px;
     color: white;
 }
 .margin-info{
