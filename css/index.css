@@ -186,15 +186,11 @@ body{
 }
 .footer__bottom__menu{
   display: flex;
-  /* justify-content: flex-end; */
-  /* border: 1px solid white; */
 }
 .footer__bottom__menu__left{
   display: flex;
-  border: 1px solid wheat;
+  /* border: 1px solid wheat; */
   width: 15%;
-  /* z-index: 30; */
-  /* margin-right: 330px; */
 }
 .footer__bottom__menu__left div {
   font-size: 15px;
@@ -219,11 +215,11 @@ body{
   position: absolute;
   left: 80%;
   top: 25%;
-
+  /* z-index: 10; */
 }
 
 .footer__bottom__menu__right{
-  border: 1px solid white;
+  /* border: 1px solid white; */
   width: 80%;
   text-align: right;
   /* margin-right: 100px; */
@@ -246,7 +242,7 @@ body{
   font-size: 14px;
   color: #636363;
   /* z-index: 30; */
-  border: 1px solid white;
+  /* border: 1px solid white; */
   width: 10%;
   text-align: right;
 }
@@ -262,32 +258,45 @@ body{
 
 .footer__menu__left{
   float: right;
-  width: 40%;
+  width: 41%;
   text-align: left;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   /* white-space: nowrap; */
 } 
 
-.footer__bottom__menu__right ul{
-  border: 1px solid yellow;
-}
+
 @media screen and (max-width:1156px){
   .footer__menu__left{
     width: 100%;
     text-align: right;
-    border: 1px solid white;
+    /* border: 1px solid white; */
   } 
+  .footer__bottom__menu__left{
+    width: 30%;
+  }
 }
 
-@media screen and (max-width:1487px) and (min-width:1156px){
+@media screen and (max-width:1520px) and (min-width:1156px){
   .footer__menu__left{
     width: 55%;
+    font-size: 10px;
   }
+  /* .footer__bottom__menu__right{
+    width: 60%;
+    border: 1px solid wheat;
+  } */
 }
 
 @media screen and (max-width:1024px) {
   .footer__bottom__menu{
     display: block;
+  }
+  .footer__bottom__menu__left{
+    width: 40%;
+  }
+  .footer__bottom__menu__right{
+    width: 60%;
+    /* border: 1px solid wheat; */
   }
   .footer__menu__left{
     width: 100%;
@@ -313,6 +322,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    
   }
   .footer__bottom__menu__right{
     width: 100%;
