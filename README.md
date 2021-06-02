@@ -18,3 +18,4 @@ LƯU Ý:
 + Mọi phiên bản code hoàn chỉnh sau khi merge thì sẽ được merge vào develop
 + Mn nhớ checkout develop về nha
 ---- Nếu mn có muốn gửi gấm gì với nhau khi code thì mn có thể viết vào file này nha .  Cám ơn mn đã đọc file <3
+ 
