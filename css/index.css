@@ -240,6 +240,8 @@ hr{
   color: #636363;
   width: 10%;
   text-align: right;
+  background-color: black;
+  border: 0px;
 }
 
 .back-to-top i{
