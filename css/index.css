@@ -336,11 +336,6 @@ a:hover{
 /* HEADER */
 
 @media (max-width: 1200px) {
-  .search_inline i{
-    position: relative;
-    bottom: -72px;
-    right: 30px;
-  }
   .header_active .nav{
     position: absolute;
     bottom: 0px;
@@ -354,8 +349,9 @@ a:hover{
 @media (max-width: 768px) {
   .search_inline i{
     position: absolute;
-    right: -36px;
-    margin: 83px;
+    right: -33px;
+    margin: 82px;
+    bottom: -70px;
   }
   .search_inline{
     margin: 0;
@@ -368,7 +364,9 @@ a:hover{
   .carousel-caption{
     display: contents;
   }
-
+  .collapse, .navbar-collapse{
+    margin: 49px 22px;
+  }
 }
 
 
@@ -389,7 +387,6 @@ a:hover{
     right: 74px;
     z-index: 22;
   }
-
   .header_active .nav{
     position: absolute;
     bottom: 0px;
@@ -401,11 +398,18 @@ a:hover{
   .carousel .search{
     margin-top: 100px;
   }
-  .welcome__text h2{
-    font-size: none;
-  }
+ .navbar-nav{
+   padding-top: 10px;
+ }
   .welcome__text p{
     font-size: 20px;
+  }
+  .collapse, .navbar-collapse{
+    margin: 54px -20px;
+  }
+  .header_logo span{
+    position: relative;
+    left: -46px;
   }
 }
 
