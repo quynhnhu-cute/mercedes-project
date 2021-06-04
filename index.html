@@ -13,8 +13,8 @@
   <!-- BOOTSTRAP -->
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <!-- BOOTSTRAP 4.0 -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" /> -->
 
   <!-- font awsome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -43,64 +43,73 @@
 
 <body>
 
+ 
+
   <!-- Cường -->
   <header id="hide_header">
     <!-- Nguyên phần header  -->
 
-    <div class="container">
+    <nav class="navbar navbar-expand-xl navbar-dark container-xl">
       <div class="header_content">
         <div class="header_logo">
-          <a href="http://" target="_blank" rel="noopener noreferrer">
+          <a href="http://" target="_blank" rel="noopener noreferrer" class="navbar-brand">
             <img
               src="images/header_logo/kisspng-mercedes-benz-car-jerry-s-collision-center-logo-ve-content-management-system-cheeky-monkey-studios-lt-5b6ce6705022a8.6423509715338635363282.png"
               alt="mercedes">
             <span>Mercedes-Benz</span>
           </a>
         </div>
-        <div class="header_active">
+        <div class="header_active ">
           <div class="active_top">
-            <a href="">
+            <a href="" data-toggle="modal" data-target="#exampleModalLong">
               <i class="fa fa-info">
                 <p>Provider/Privacy Statement</p>
               </i>
-
             </a>
             <a href="">
               <span>Deutsch<span>
             </a>
           </div>
-          <div class="active_bottom">
-            <ul>
-              <a href="">
-                <li>Company</li>
-              </a>
-              <a href="">
-                <li>Vehicles</li>
-              </a>
-              <a href="">
-                <li>Design</li>
-              </a>
-              <a href="">
-                <li>Innovation</li>
-              </a>
-              <a href="">
-                <li>Museum & History</li>
-              </a>
-              <a href="">
-                <li>Sports</li>
-              </a>
-              <a href="">
-                <li>Events</li>
-              </a>
-              <a href="">
-                <li>Lifestyle</li>
-              </a>
-              <a href="#search" id="#search"><i class="fa fa-search"></i></a>
-            </ul>
+          <button class="navbar-toggler nav" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="search_inline">
+            <div class="active_bottom collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <a href="">
+                  <li class="nav-item active">Company<span class="sr-only">(current)</span></li>
+                </a>
+                <a href="">
+                  <li class="nav-item">Vehicles</li>
+                </a>
+                <a href="">
+                  <li class="nav-item">Design</li>
+                </a>
+                <a href="">
+                  <li class="nav-item">Innovation</li>
+                </a>
+                <a href="">
+                  <li class="nav-item">Museum & History</li>
+                </a>
+                <a href="">
+                  <li class="nav-item">Sports</li>
+                </a>
+                <a href="">
+                  <li class="nav-item">Events</li>
+                </a>
+                <a href="">
+                  <li class="nav-item">Lifestyle</li>
+                </a>
+              </ul>
+
+            </div>
+            <a href="#search" id="#search"><i class="fa fa-search bottom: 0px;
+            right: 60px;" class="navbar-nav"></i></a>
           </div>
         </div>
       </div>
-    </div>
+    </nav>
 
   </header>
 
@@ -112,7 +121,7 @@
       <div class="carousel-inner">
         <div class="carousel-item active position-relative">
           <img src="./images/banner/h1.jpeg" class="d-block w-100" alt="">
-          <div class="carousel-caption d-none d-md-block position-absolute sticky-top sticky-right text-left">
+          <div class="carousel-caption position-absolute sticky-top sticky-right text-left">
             <a href="">
               <h1 class="animate__animated animate__fadeInDown "> The new CLS. </h1>
             </a>
@@ -124,7 +133,7 @@
         </div>
         <div class="carousel-item">
           <img src="./images/banner/h2.webp" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block position-absolute sticky-top sticky-right text-left">
+          <div class="carousel-caption position-absolute sticky-top sticky-right text-left">
             <a href="">
               <h1 class="animate__animated animate__fadeInDown"> The new C-Class by Mercedes‑Benz. </h1>
             </a>
@@ -135,7 +144,7 @@
 
         <div class="carousel-item">
           <img src="./images/banner/h3.webp" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block position-absolute sticky-top sticky-right text-left">
+          <div class="carousel-caption position-absolute sticky-top sticky-right text-left">
             <a href="">
               <h1 class="animate__animated animate__fadeInDown"> A Mercedes-Benz – For your wrist. </h1>
             </a>
@@ -146,7 +155,7 @@
         </div>
         <div class="carousel-item">
           <img src="./images/banner/h4.webp" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block position-absolute sticky-top sticky-right text-left">
+          <div class="carousel-caption position-absolute sticky-top sticky-right text-left">
             <a href="">
               <h1 class="animate__animated animate__fadeInDown"> The new EQS. This is for you, world. </h1>
             </a>
@@ -156,7 +165,7 @@
         </div>
         <div class="carousel-item">
           <img src="./images/banner/h5.webp" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block position-absolute sticky-top sticky-right text-left">
+          <div class="carousel-caption position-absolute sticky-top sticky-right text-left">
             <a href="">
               <h1 class="animate__animated animate__fadeInDown"> Concept EQT. </h1>
             </a>
@@ -166,7 +175,7 @@
         </div>
         <div class="carousel-item">
           <img src="./images/banner/h6.webp" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block position-absolute sticky-top sticky-right text-left">
+          <div class="carousel-caption position-absolute sticky-top sticky-right text-left">
             <a href="">
               <h1 class="animate__animated animate__fadeInDown" id="blackText"> The new EQB. </h1>
             </a>
@@ -1955,11 +1964,11 @@
       <hr>
 
     </div>
-    <<<<<<< HEAD <footer>
-      <<<<<<< HEAD=======>>>>>>> 53fd8cfa8e00e3521800b2857c62e14defaa92df
+ <footer>
+
         <!-- Từ stay informed đến hết  -->
   </footer>
-  =======
+
   <div class="footer__bottom">
     <p>This is the International website of Mercedes-Benz
       AG. Visitors from the U.S., please visit our U.S. website <a
@@ -1967,7 +1976,7 @@
     <div class="footer__bottom__menu">
       <div class="footer__bottom__menu__left">
         <div><a href="">Deutsch</a></div>
-        >>>>>>> 26bc0c20bc59883a53c9b296d336791e5d7ae8d5
+
 
         <div>English</div>
       </div>
@@ -2004,41 +2013,127 @@
     </footer>
 
 
+
+
+
+  <!-- modal -->
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <bottom class="modal-title" id="exampleModalLongTitle">Modal title</bottom>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                  Mercedes-Benz AG</p>
+
+                 <p>Mercedesstraße 120</p> 
+                  <p> D-70372 Stuttgart</p>
+                  <p>Deutschland</p> 
+
+                  <p>Phone: <a href="">+49 7 11 17-0</a> </p> 
+                 <p>E-Mail: <a href="">dialog.mb@daimler.com</a> </p> 
+
+                 <p>Represented by the Board of Management:</p> 
+
+                  <p> Ola Källenius (Vorsitzender), Jörg Burzer, Renata Jungo Brüngger, Sajjad Khan, Sabine Kohleisen,
+                  Harald Wilhelm, Markus Schäfer, Britta Seeger</p>
+
+                  <p> Chairman of the Supervisory Board: Bernd Pischetsrieder</p>
+
+                 <p>Court of Registry: Stuttgart; commercial register no. 762873
+
+                  VAT ID: DE321281763</p> 
+
+
+
+                  Other companies advertising on this website:
+
+
+
+                 <p> of Daimler contents</p> 
+
+                <p> Daimler AG</p> 
+
+                
+                <p>Mercedesstraße 120</p> 
+                <p> D-70372 Stuttgart</p>
+                <p>Deutschland</p> 
+
+                <p>Phone: <a href="">+49 7 11 17-0</a> </p> 
+               <p>E-Mail: <a href="">dialog.mb@daimler.com</a> </p> 
+
+               <p>Represented by the Board of Management:</p> 
+
+                <p> Ola Källenius (Vorsitzender), Jörg Burzer, Renata Jungo Brüngger, Sajjad Khan, Sabine Kohleisen,
+                Harald Wilhelm, Markus Schäfer, Britta Seeger</p>
+
+                <p> Chairman of the Supervisory Board: Bernd Pischetsrieder</p>
+
+               <p>Court of Registry: Stuttgart; commercial register no. 762873
+
+                VAT ID: DE321281763</p> 
+
+
+                <p>Mercedesstraße 120</p> 
+                <p> D-70372 Stuttgart</p>
+                <p>Deutschland</p> 
+
+                <p>Phone: <a href="">+49 7 11 17-0</a> </p> 
+               <p>E-Mail: <a href="">dialog.mb@daimler.com</a> </p> 
+
+               <p>Represented by the Board of Management:</p> 
+
+                <p> Ola Källenius (Vorsitzender), Jörg Burzer, Renata Jungo Brüngger, Sajjad Khan, Sabine Kohleisen,
+                Harald Wilhelm, Markus Schäfer, Britta Seeger</p>
+
+                <p> Chairman of the Supervisory Board: Bernd Pischetsrieder</p>
+
+               <p>Court of Registry: Stuttgart; commercial register no. 762873
+
+                VAT ID: DE321281763</p> 
+
+
+
+                <p>Mercedesstraße 120</p> 
+                  <p> D-70372 Stuttgart</p>
+                  <p>Deutschland</p> 
+
+                  <p>Phone: <a href="">+49 7 11 17-0</a> </p> 
+                 <p>E-Mail: <a href="">dialog.mb@daimler.com</a> </p> 
+
+                 <p>Represented by the Board of Management:</p> 
+
+                  <p> Ola Källenius (Vorsitzender), Jörg Burzer, Renata Jungo Brüngger, Sajjad Khan, Sabine Kohleisen,
+                  Harald Wilhelm, Markus Schäfer, Britta Seeger</p>
+
+                  <p> Chairman of the Supervisory Board: Bernd Pischetsrieder</p>
+
+                 <p>Court of Registry: Stuttgart; commercial register no. 762873
+
+                  VAT ID: DE321281763</p> 
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+              </div>
+            </div>
+          </div>
     <!-- jquery -->
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <!-- BOOTSTRAP JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.min.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
       crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"></script>
-
-    <!-- hide header -->
-    <script>
-      var lastScrollTop = 0;
-
-      hide_header = document.getElementById("hide");
-
-      window.addEventListener("scroll", function () {
-        var scrollTop = window.pageYOffset ||
-          document.documentElement.scrollTop;
-        if (scrollTop > lastScrollTop) {
-          hide_header.style.top = "-10px"
-        } else {
-          hide_header.style.top = "0"
-        }
-        lastScrollTop = scrollTop;
-      })
-    </script>
 
     <!-- Back to top button  -->
     <script>
@@ -2051,40 +2146,31 @@
       }
     </script>
 
+    <!-- MAIN CSS -->
+    <script src="js/index.js"></script>
 
- <!-- Từ stay informed đến hết -->
-      <!-- MAIN CSS -->
-      <script src="js/index.js"></script>
-      <!-- BOOTSTRAP 4.0 -->
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <!-- modal_bootstrap -->
+    <script>
+      $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+      })
+    </script>
+    <!-- hide-header -->
 
-
-
-        <!-- hide-header -->
-
-        <script>
-          const hide_header= document.getElementById('hide_header')
-          let prevScrollPos = window.pageYOffset;
-          window.addEventListener('scroll' , ()=>{
-            let currentScrollPos = window.pageYOffset;
-            if(prevScrollPos < currentScrollPos) {
-              hide_header.classList.add('hide');
-            } else{
-              hide_header.classList.remove('hide');
-            }
-            prevScrollPos = currentScrollPos;
-          })
-        </script>
+    <script>
+      const hide_header = document.getElementById('hide_header')
+      let prevScrollPos = window.pageYOffset;
+      window.addEventListener('scroll', () => {
+        let currentScrollPos = window.pageYOffset;
+        if (prevScrollPos < currentScrollPos) {
+          hide_header.classList.add('hide');
+        } else {
+          hide_header.classList.remove('hide');
+        }
+        prevScrollPos = currentScrollPos;
+      })
+    </script>
 
 </body>
 
 </html>
-
