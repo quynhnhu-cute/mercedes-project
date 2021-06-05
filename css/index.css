@@ -1028,3 +1028,6 @@ hr{
   background-color: #333333;
   /* font-weight: 100; */
 }
+.footer__bottom, .topics__item{
+   font-family: MBCorpo Text,DaimlerCS-Regular,Helvetica,Arial,sans-serif;
+}
