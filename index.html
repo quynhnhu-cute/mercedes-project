@@ -200,7 +200,6 @@
               </button>
             </div>
           </div>
-
           <div class="carousel-item">
             <img
               src="./images/banner/h3.webp"
@@ -329,7 +328,7 @@
             </div>
           </div>
 
-          <a
+          <!-- <a
             class="carousel-control-prev carousel_angle"
             href="#carouselExampleCaptions"
             role="button"
@@ -349,18 +348,38 @@
         <div class="search" id="search">
           <input type="text" placeholder="I am looking for..." />
           <i class="fa fa-search" id="search"></i>
-        </div>
+        </div> -->
+
+        <a
+          class="carousel-control-prev carousel_angle"
+          href="#carouselExampleCaptions"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a
+          class="carousel-control-next carousel_angle"
+          href="#carouselExampleCaptions"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="search" id="search">
+        <input type="text" placeholder="I am looking for..." />
+        <i class="fa fa-search" id="search"></i>
       </div>
     </div>
-
-    <section
-      class="welcome py-5 container-fluid"
-      data-aos="fade-zoom-in"
-      data-aos-easing="ease-in-back"
-      data-aos-delay="500"
-      data-aos-offset="0"
-    >
-      <div class="welcome__content w-75 ml-auto mr-auto row">
+    <section class="welcome py-5 container-fluid">
+      <div
+        class="welcome__content w-75 ml-auto mr-auto row"
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="500"
+        data-aos-offset="0"
+      >
         <div class="welcome__text col-md-6">
           <h2>Welcome to the Mercedes-Benz international website.</h2>
           <p>
@@ -372,7 +391,7 @@
           <p>
             This is the International website of Mercedes-Benz AG. Visitors from
             the U.S., please visit our U.S. website
-            <a href="https://www.mbusa.com/en/home" target="_blank"
+            <a  id="text" href="https://www.mbusa.com/en/home" target="_blank"
               >www.mbusa.com</a
             >.
           </p>
@@ -1018,7 +1037,7 @@
               <div class="content__item content__item1">
                 <a href="#"
                   ><img
-                    src="./images/popular/00-mercedes-benz-2020-mercedes-maybach-gls-500-4matic-x167-two-colour-paint-rubellite-red-obsidian-black-2560x1440.webp"
+                    src="./images/popular/00-mercedes-benz-2020-mercedes-maybach-gls-600-4matic-x167-two-colour-paint-rubellite-red-obsidian-black-2560x1440.webp"
                     alt=""
                   />
                   <div class="content__text">
@@ -2561,7 +2580,7 @@
         <p>
           This is the International website of Mercedes-Benz AG. Visitors from
           the U.S., please visit our U.S. website
-          <a href="https://www.mbusa.com/en/home">www.mbusa.com.</a>
+          <a  href="https://www.mbusa.com/en/home">www.mbusa.com.</a>
         </p>
         <div class="footer__bottom__menu">
           <div class="footer__bottom__menu__left">
@@ -2599,6 +2618,8 @@
       </div>
     </footer>
 
+    <!-- MAIN JS -->
+    <script src="js/index.js"></script>
     <!-- jquery -->
 
     <script
