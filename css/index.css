@@ -674,6 +674,13 @@ p {
   height: 8px;
   opacity: 1;
 }
+.welcome__text a {
+  color: #00adef;
+}
+.welcome__text a:hover {
+  text-decoration: underline;
+  color: #0088c6;
+}
 /* CONTENT */
 .content__contain i {
   font-size: 15px;
