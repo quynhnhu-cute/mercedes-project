@@ -46,10 +46,15 @@
     <header id="hide_header">
       <!-- Nguyên phần header  -->
 
-      <div class="container">
+      <nav class="navbar navbar-expand-xl navbar-dark container-xl">
         <div class="header_content">
           <div class="header_logo">
-            <a href="http://" target="_blank" rel="noopener noreferrer">
+            <a
+              href="http://"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="navbar-brand"
+            >
               <img
                 src="images/header_logo/kisspng-mercedes-benz-car-jerry-s-collision-center-logo-ve-content-management-system-cheeky-monkey-studios-lt-5b6ce6705022a8.6423509715338635363282.png"
                 alt="mercedes"
@@ -59,7 +64,7 @@
           </div>
           <div class="header_active">
             <div class="active_top">
-              <a href="">
+              <a href="" data-toggle="modal" data-target="#exampleModalLong">
                 <i class="fa fa-info">
                   <p>Provider/Privacy Statement</p>
                 </i>
@@ -67,39 +72,64 @@
               <a href="">
                 <span>Deutsch</span>
               </a>
+              <!-- <button type="button"
+              class="btn btn-dark rounded-0 animate__animated animate__fadeInDown animate__delay-1s">Learn more</button> -->
             </div>
-            <div class="active_bottom">
-              <ul>
-                <a href="">
-                  <li>Company</li>
-                </a>
-                <a href="">
-                  <li>Vehicles</li>
-                </a>
-                <a href="">
-                  <li>Design</li>
-                </a>
-                <a href="">
-                  <li>Innovation</li>
-                </a>
-                <a href="">
-                  <li>Museum & History</li>
-                </a>
-                <a href="">
-                  <li>Sports</li>
-                </a>
-                <a href="">
-                  <li>Events</li>
-                </a>
-                <a href="">
-                  <li>Lifestyle</li>
-                </a>
-                <a href="#search"><i class="fa fa-search"></i></a>
-              </ul>
+            <button
+              class="navbar-toggler nav"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="search_inline">
+              <div
+                class="active_bottom collapse navbar-collapse"
+                id="navbarNavDropdown"
+              >
+                <ul class="navbar-nav">
+                  <a href="">
+                    <li class="nav-item active">
+                      Company<span class="sr-only">(current)</span>
+                    </li>
+                  </a>
+                  <a href="">
+                    <li class="nav-item">Vehicles</li>
+                  </a>
+                  <a href="">
+                    <li class="nav-item">Design</li>
+                  </a>
+                  <a href="">
+                    <li class="nav-item">Innovation</li>
+                  </a>
+                  <a href="">
+                    <li class="nav-item">Museum & History</li>
+                  </a>
+                  <a href="">
+                    <li class="nav-item">Sports</li>
+                  </a>
+                  <a href="">
+                    <li class="nav-item">Events</li>
+                  </a>
+                  <a href="">
+                    <li class="nav-item">Lifestyle</li>
+                  </a>
+                </ul>
+              </div>
+              <a href="#search" id="#search"
+                ><i
+                  class="fa fa-search bottom: 0px; right: 60px;"
+                  class="navbar-nav"
+                ></i
+              ></a>
             </div>
           </div>
         </div>
-      </div>
+      </nav>
     </header>
 
     <!-- Cường -->
@@ -112,15 +142,10 @@
       >
         <div class="carousel-inner">
           <div class="carousel-item active position-relative">
-            <img
-              src="./images/banner/h1.jpeg"
-              class="d-block w-100"
-              alt="..."
-            />
+            <img src="./images/banner/h1.jpeg" class="d-block w-100" alt="" />
             <div
               class="
                 carousel-caption
-                d-none d-md-block
                 position-absolute
                 sticky-top sticky-right
                 text-left
@@ -153,7 +178,6 @@
             <div
               class="
                 carousel-caption
-                d-none d-md-block
                 position-absolute
                 sticky-top sticky-right
                 text-left
@@ -185,7 +209,6 @@
             <div
               class="
                 carousel-caption
-                d-none d-md-block
                 position-absolute
                 sticky-top sticky-right
                 text-left
@@ -217,7 +240,6 @@
             <div
               class="
                 carousel-caption
-                d-none d-md-block
                 position-absolute
                 sticky-top sticky-right
                 text-left
@@ -249,7 +271,6 @@
             <div
               class="
                 carousel-caption
-                d-none d-md-block
                 position-absolute
                 sticky-top sticky-right
                 text-left
@@ -281,14 +302,16 @@
             <div
               class="
                 carousel-caption
-                d-none d-md-block
                 position-absolute
                 sticky-top sticky-right
                 text-left
               "
             >
               <a href="">
-                <h1 class="animate__animated animate__fadeInDown">
+                <h1
+                  class="animate__animated animate__fadeInDown"
+                  id="blackText"
+                >
                   The new EQB.
                 </h1>
               </a>
@@ -304,7 +327,28 @@
               </button>
             </div>
           </div>
+
+          <!-- <a
+            class="carousel-control-prev carousel_angle"
+            href="#carouselExampleCaptions"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a
+            class="carousel-control-next carousel_angle"
+            href="#carouselExampleCaptions"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </a>
         </div>
+        <div class="search" id="search">
+          <input type="text" placeholder="I am looking for..." />
+          <i class="fa fa-search" id="search"></i>
+        </div> -->
 
         <a
           class="carousel-control-prev carousel_angle"
@@ -347,7 +391,7 @@
           <p>
             This is the International website of Mercedes-Benz AG. Visitors from
             the U.S., please visit our U.S. website
-            <a href="https://www.mbusa.com/en/home" target="_blank"
+            <a  id="text" href="https://www.mbusa.com/en/home" target="_blank"
               >www.mbusa.com</a
             >.
           </p>
@@ -2536,7 +2580,7 @@
         <p>
           This is the International website of Mercedes-Benz AG. Visitors from
           the U.S., please visit our U.S. website
-          <a href="https://www.mbusa.com/en/home">www.mbusa.com.</a>
+          <a  href="https://www.mbusa.com/en/home">www.mbusa.com.</a>
         </p>
         <div class="footer__bottom__menu">
           <div class="footer__bottom__menu__left">

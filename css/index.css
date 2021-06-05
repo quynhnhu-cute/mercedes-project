@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -325,51 +326,147 @@ html{
 body{
     font-family: MBCorpo Text,DaimlerCS-Regular,Helvetica,Arial,sans-serif;
 }
-
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+}
 
 /* HEADER */
 
+@media (max-width: 1200px) {
+  .header_active .nav{
+    position: absolute;
+    bottom: 0px;
+    right: 96px;
+  }
+  .active_bottom{
+    margin-right: 40px;
+  }
+}
 
+@media (max-width: 768px) {
+  .search_inline i{
+    position: absolute;
+    right: -33px;
+    margin: 82px;
+    bottom: -70px;
+  }
+  .search_inline{
+    margin: 0;
+    padding: 0;
+  }
+  .header_active .nav{
+    position: absolute;
+    right: 0;
+  }
+  .carousel-caption{
+    display: contents;
+  }
+  .collapse, .navbar-collapse{
+    margin: 49px 22px;
+  }
+}
+
+
+@media (max-width: 415px) {
+  .header_active .active_top p{
+    visibility: hidden;
+  }
+  .header_active .active_top span{
+    z-index: 22;
+    position: absolute;
+    right: 69px;
+    width: 0;
+    background: none;
+  }
+  .header_active .active_top i{
+    position: absolute;
+    top: 5px;
+    right: 74px;
+    z-index: 22;
+  }
+  .header_active .nav{
+    position: absolute;
+    bottom: 0px;
+    right: 5px;
+  }
+  .carousel-caption{
+    display: contents;
+  }
+  .carousel .search{
+    margin-top: 100px;
+  }
+ .navbar-nav{
+   padding-top: 10px;
+ }
+  .welcome__text p{
+    font-size: 20px;
+  }
+  .collapse, .navbar-collapse{
+    margin: 54px -20px;
+  }
+  .header_logo span{
+    position: relative;
+    left: -46px;
+  }
+}
+
+
+.navbar-dark .navbar-toggler{
+  border: none;
+  color: white;
+  
+}
 header {
     background-color: black;
     color: white;
     position: fixed;
     z-index: 5;
     width: 100%;
-
+}
+.header_logo{
+  line-height: -6px;
 }
 .header_content{
     display: flex;
     justify-content: space-between;
     width: 100%;
     margin: auto;
-    height: 108px;
+    height: 90px;
     font-size: 15px;
 }
 .header_logo img{
     width: 70px;
     margin-right: 55px;
-    padding: 17px 0px;
+    padding: 10px 0px;
     margin-bottom: 50px;
+    height: 90px;
+}
+.header_logo a span {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
 }
 
 .active_top{
     text-align: right;
-    margin-top: 5px;
-
+    margin-top: -4px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
-.active_top a{
-    color: white;
-    text-decoration: none;
-}
-.active_top a:hover{
-    color: #00adef;
-}
-
-
 .active_top a:first-of-type{
     padding: 0 190px 0px 0;
     padding-right: 235px;
+    display: flex;
+}
+.active_top span{
+  color: white;
+}
+.active_top span:hover{
+  color: #00adef;
 }
 .active_top i{
     font-size: 9px;
@@ -378,26 +475,35 @@ header {
     height: 16px;
     line-height: 12px;
     text-align: center;
+    color: white;
 }
-.active_top i:hover{
+.active_top i:hover {
+  text-decoration: none;
+  color: #00adef;
+  border: 2px solid #00adef;
+}
+.active_top ul:hover{
     border: 2px solid #00adef;
+    color: #00adef;
 }
 .active_top p{
-    padding-left: 10px;
+    margin-left: 10px;
     font-size: 15px;
-    font-weight: 400;
-    width: 225px;
-    margin-top: -12px;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-}
-
+    font-weight: 600;
+    width: 200px;
+    margin-top: -11px;
+    background: none;
+  }
+  .active_top p:hover{
+    color: #00adef;
+  }
 .active_bottom{
     width: 100%;
 }
 .active_bottom ul a{
     color: white;
 }
-.active_bottom ul a:hover{
+.active_bottom ul a li:hover{
     color: #00adef; 
 }
 .active_bottom ul li{
@@ -406,30 +512,30 @@ header {
     margin-left: 40px;
     margin-top: 36px;
 }
-.active_bottom i{
-    padding-left: 35px;
-    padding-top: 35px;
-}
-.active_bottom i{
-    width: 20px;
-    color: white;
-    padding-top: 40px;
-    padding-right: 20px;
-}
 
+.search_inline i{
+  margin-left: 850px;
+  color: white;
+  margin-top: -16px;
+  display: block;
+}
 
 /* CAROUSEL */
+#hide_header.hide{
+  transform: translateY(-100%);
+  transition: 0.5s;
+}
 .carousel_slide{
-    font-family: 'MBCorpo Title,DaimlerCAC-Regular,Helvetica,Arial,sans-serif';
+    font-family: MBCorpo Title,DaimlerCAC-Regular,Helvetica,Arial,sans-serif;
     z-index: 1;
     padding-top: 108px;
 }
 
 .text-left{
-    font-size: 35px;
     padding-top: 75px;
     margin-left: -85px;
     z-index: 2;
+    background: none;
 }
 
 .text-left button{
@@ -447,8 +553,12 @@ header {
 }
 
 .text-left h1{
-    width: 50%;
-   
+    width: 51%;
+   background: none;
+   font-size: 45px;
+}
+#blackText{
+  color: #333;
 }
 @keyframes fadeInDown{
     from{
@@ -495,11 +605,23 @@ header {
     width: 85%;
     height: 45px;
     padding: 10px;
+    border: 1px solid white;
+    background-color: white;
+    font-size: 19px;
+
 }
 .search i{
     position: absolute;
     right: 140px;
     top: 48%;
+    background-color: white;
+    cursor: pointer;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
 }
 body section{
   background-color: black;
@@ -838,19 +960,7 @@ p {
   .welcome__text {
     padding: 0 0;
   }
-  .welcome__text h2 {
-    font-size: 15px;
-  }
-  .welcome__text p {
-    font-size: 8px;
-    font-weight: 900;
-  }
-  .welcome__content button {
-    width: 100%;
-    height: 20px;
-    font-size: 8px;
-    line-height: 50%;
-  }
+ 
   .welcome__channel {
     width: 100%;
     flex-direction: row;
@@ -917,4 +1027,7 @@ hr{
   border: 0;
   background-color: #333333;
   /* font-weight: 100; */
+}
+.footer__bottom, .topics__item{
+   font-family: MBCorpo Text,DaimlerCS-Regular,Helvetica,Arial,sans-serif;
 }
